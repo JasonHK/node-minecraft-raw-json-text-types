@@ -2,7 +2,7 @@
   "name": "minecraft-raw-json-text-types",
   "description": "",
   "license": "Unlicense",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Jason Kwok <me@jasonhk.net> (https://jasonhk.net)",
   "homepage": "https://github.com/JasonHK/node-minecraft-raw-json-text-types#readme",
   "repository": {
@@ -13,7 +13,6 @@
     "url": "https://github.com/JasonHK/node-minecraft-raw-json-text-types/issues"
   },
   "main": "index.js",
-  "types": "types",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",

@@ -6,7 +6,6 @@
         "baseUrl": ".",
         "rootDir": "src",
         "outDir": ".",
-        "declarationDir": "types",
         "paths": {
             "*": [
                 "*",
