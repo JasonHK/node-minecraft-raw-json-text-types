@@ -1,0 +1,86 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "modules": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "google"
+    ],
+    "settings": {},
+    "plugins": [],
+    "rules": {
+        "block-spacing": ["error", "always"],
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "eqeqeq": ["error", "always", { "null": "ignore" }],
+        "indent": "off",
+        "key-spacing": ["off", {
+            "align": "value",
+            "mode": "minimum"
+        }],
+        "max-len": ["warn", { "code": 120 }],
+        "new-cap": ["warn", { 
+            "capIsNewExceptions": [
+                "ClassNames"
+            ] 
+        }],
+        "no-multi-spaces": ["error", { 
+            "exceptions": { 
+                "TSEnumMember": true,
+                "TSTypeAnnotation": true
+            } 
+        }],
+        "no-trailing-spaces": ["warn", { "ignoreComments": true }],
+        "no-unused-vars": "off",
+        "object-curly-spacing": ["warn", "always", { 
+            "arraysInObjects": true,
+            "objectsInObjects": false 
+        }],
+        "padded-blocks": "off",
+        "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+        "require-jsdoc": "off",
+        "spaced-comment": ["warn", "always", { 
+            "line": {
+                "exceptions": ["-", "="]
+            }
+        }],
+        "valid-jsdoc": "off",
+        "@typescript-eslint/class-name-casing": "error",
+        "@typescript-eslint/explicit-member-accessibility": ["error", {
+            "accessibility": "explicit",
+            "overrides": {
+                "constructors": "no-public",
+                "properties": "off"
+            }
+        }],
+        "@typescript-eslint/indent": ["error", 4, {
+            "SwitchCase": 1,
+            "ignoredNodes": [
+                "TSInterfaceHeritage"
+            ]
+        }],
+        "@typescript-eslint/interface-name-prefix": ["warn", "never"],
+        "@typescript-eslint/no-empty-interface": "warn",
+        "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/no-unused-vars": ["warn", {
+            "args": "after-used",
+            "ignoreRestSiblings": true
+        }],
+        "@typescript-eslint/no-use-before-define": ["error", {
+            "functions": false,
+            "classes": false
+        }]
+    }
+}

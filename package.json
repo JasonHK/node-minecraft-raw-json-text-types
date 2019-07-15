@@ -1,0 +1,29 @@
+{
+  "name": "minecraft-raw-json-text-types",
+  "description": "",
+  "license": "Unlicense",
+  "version": "0.0.1",
+  "author": "Jason Kwok",
+  "homepage": "https://github.com/JasonHK/node-minecraft-raw-json-text-types#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonHK/node-minecraft-raw-json-text-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JasonHK/node-minecraft-raw-json-text-types/issues"
+  },
+  "main": "index.js",
+  "types": "types",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.11",
+    "@typescript-eslint/parser": "^1.11",
+    "eslint": "^5.16",
+    "eslint-config-google": "^0.13",
+    "typescript": "^3.5"
+  }
+}

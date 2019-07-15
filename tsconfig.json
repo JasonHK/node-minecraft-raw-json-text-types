@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "rootDir": "src",
+        "outDir": ".",
+        "declarationDir": "types",
+        "paths": {
+            "*": [
+                "*",
+                "node_modules/*",
+                "src/types/*",
+            ]
+        },
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "preserveConstEnums": true,
+        "removeComments": false,
+        "sourceMap": false,
+        "strict": true,
+    },
+    "files": [
+        "src/index.ts",
+    ],
+    "include": [
+        "src/**/*",
+    ],
+    "exclude": [
+        "src/**/*.spec.ts",
+    ],
+}
